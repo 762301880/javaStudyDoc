@@ -65,7 +65,42 @@ Default locale: zh_CN, platform encoding: GBK
 OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ```
 
+##  linux安装maven
 
+### 下载.tar.gz压缩文件
+
+```shell
+wget https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.1-bin.tar.gz
+```
+
+- 解压下载的压缩文件
+
+```shell
+ tar -zxvf apache-maven-3.8.1-bin.tar.gz
+ # 移动解压的文件
+ sudo mv -f apache-maven-3.8.1 /usr/local/
+```
+
+### 编辑 **/etc/profile** 
+
+> 文件 **sudo vim /etc/profile**，在文件末尾添加如下代码：
+
+```
+export MAVEN_HOME=/usr/local/apache-maven-3.3.9
+export PATH=${PATH}:${MAVEN_HOME}/bin
+```
+
+保存文件，并运行如下命令使环境变量生效：
+
+```shell 
+source /etc/profile
+```
+
+在控制台输入如下命令，如果能看到 Maven 相关版本信息，则说明 Maven 已经安装成功：
+
+```shell
+#mvn -v
+```
 
 # 更换maven镜像源
 
