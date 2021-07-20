@@ -53,19 +53,11 @@
 
 ![image-20210719175253487](https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/image-20210719175253487.png)
 
-### 测试是否安装成功
 
-```shell
-# mvn -v 命令查看是否输出对应的版本号
-C:\Users\Administrator>mvn -v
-Apache Maven 3.8.1 (05c21c65bdfed0f71a2f2ada8b84da59348c4c5d)
-Maven home: E:\Maven\apache-maven-3.8.1\bin\..
-Java version: 1.8.0_112, vendor: Oracle Corporation, runtime: D:\Program Files\Java\jdk1.8.0_112\jre
-Default locale: zh_CN, platform encoding: GBK
-OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
-```
 
 ##  linux安装maven
+
+- 记住安装maven之前一定要先安装java-jdk
 
 ### 下载.tar.gz压缩文件
 
@@ -76,6 +68,7 @@ wget https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.
 - 解压下载的压缩文件
 
 ```shell
+ # 解压
  tar -zxvf apache-maven-3.8.1-bin.tar.gz
  # 移动解压的文件
  sudo mv -f apache-maven-3.8.1 /usr/local/
@@ -86,20 +79,26 @@ wget https://downloads.apache.org/maven/maven-3/3.8.1/binaries/apache-maven-3.8.
 > 文件 **sudo vim /etc/profile**，在文件末尾添加如下代码：
 
 ```
-export MAVEN_HOME=/usr/local/apache-maven-3.3.9
+export MAVEN_HOME=/usr/local/apache-maven-3.8.1
 export PATH=${PATH}:${MAVEN_HOME}/bin
 ```
 
-保存文件，并运行如下命令使环境变量生效：
+- 保存文件，并运行如下命令使环境变量生效：
 
 ```shell 
 source /etc/profile
 ```
 
-在控制台输入如下命令，如果能看到 Maven 相关版本信息，则说明 Maven 已经安装成功：
+- 在控制台输入如下命令，如果能看到 Maven 相关版本信息，则说明 Maven 已经安装成功：
 
 ```shell
-#mvn -v
+# mvn -v 命令查看是否输出对应的版本号
+C:\Users\Administrator>mvn -v
+Apache Maven 3.8.1 (05c21c65bdfed0f71a2f2ada8b84da59348c4c5d)
+Maven home: E:\Maven\apache-maven-3.8.1\bin\..
+Java version: 1.8.0_112, vendor: Oracle Corporation, runtime: D:\Program Files\Java\jdk1.8.0_112\jre
+Default locale: zh_CN, platform encoding: GBK
+OS name: "windows 10", version: "10.0", arch: "amd64", family: "windows"
 ```
 
 # 更换maven镜像源
