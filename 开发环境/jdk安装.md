@@ -54,6 +54,11 @@ yum remove java-*
 
 **输入命令**
 
+> 命令说明
+>
+> 1. % 表示引用的意思 **%JAVA_HOME%\bin** 意思是引用jdk下面的bin(主)目录
+> 2. % 表示引用的意思 **%JAVA_HOME%\jre\bin** 意思是引用jre下面的bin(主)目录
+
 ```
 %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
 ```
