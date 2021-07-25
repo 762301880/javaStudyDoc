@@ -64,11 +64,75 @@ yum remove java-*
 ```
 <img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120107121-471997434.png' width='600px' heigth='400px' title='示例'>
 
-<img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120330160-1457725008.png' width='600px' heigth='400px' title='示例'>
+<img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120330160-1457725008.png' width='600px' heigth='400px' title='示例'>								
 
 ### 检测是否安装成功
 
 打开**cmd** 输入命令`java -version`检测安装是否配置成功
 
 <img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120534391-1284611657.png' width='600px' heigth='400px' title='示例'  >
+
+# Ubuntu安装jdk
+
+## 使用命令安装
+
+```shell
+sudo apt install openjdk-8-jdk
+```
+
+- 安装完成之后查看是否安装成功
+
+```shell
+java -version 
+```
+
+## 手动安装
+
+### 手动安装(建议)
+
+> 将Linux版的jdk的安装包配置到环境变量即可,很简单方便
+> oracle现在开始收费了,下载jdk8 的时候需要登录,最好下载一个jdk保存着,否则忘记账号很麻烦
+
+- 获取安装包
+  - 方法1:从网上找一个jdk8的tar.gz包,上传到Ubuntu
+  - 方法2:或者从网上找到下载jdk8的Linux版本的链接,使用 `wget 下载链接`,将jdk下载到当前目录
+- 解压安装包到指定位置
+
+
+
+```
+tar –xvf jdk-xxx.tar.gz –C /usr/local # 位置看个人习惯
+```
+
+- 修改配置环境
+
+
+
+```
+# 打开文件
+sudo vim /etc/profile
+# 设置环境变量
+ JAVA_HOME=/usr/local/jdk解压的文件夹
+ CLASSPATH=.:$JAVA_HOME/lib.tools.jar
+ PATH=$JAVA_HOME/bin:$PATH
+ export JAVA_HOME CLASSPATH PATH
+```
+
+- 重新加载`/etc/profile`配置文件
+
+
+
+```
+sudo source /etc/profile
+```
+
+- 查看java版本
+
+
+
+```
+java -version
+```
+
+
 
