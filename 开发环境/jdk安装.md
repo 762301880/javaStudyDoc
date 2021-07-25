@@ -88,7 +88,51 @@ java -version
 
 ## 手动安装
 
+### 手动安装(建议)
 
+> 将Linux版的jdk的安装包配置到环境变量即可,很简单方便
+> oracle现在开始收费了,下载jdk8 的时候需要登录,最好下载一个jdk保存着,否则忘记账号很麻烦
+
+- 获取安装包
+  - 方法1:从网上找一个jdk8的tar.gz包,上传到Ubuntu
+  - 方法2:或者从网上找到下载jdk8的Linux版本的链接,使用 `wget 下载链接`,将jdk下载到当前目录
+- 解压安装包到指定位置
+
+
+
+```
+tar –xvf jdk-xxx.tar.gz –C /usr/local # 位置看个人习惯
+```
+
+- 修改配置环境
+
+
+
+```
+# 打开文件
+sudo vim /etc/profile
+# 设置环境变量
+ JAVA_HOME=/usr/local/jdk解压的文件夹
+ CLASSPATH=.:$JAVA_HOME/lib.tools.jar
+ PATH=$JAVA_HOME/bin:$PATH
+ export JAVA_HOME CLASSPATH PATH
+```
+
+- 重新加载`/etc/profile`配置文件
+
+
+
+```
+sudo source /etc/profile
+```
+
+- 查看java版本
+
+
+
+```
+java -version
+```
 
 
 
