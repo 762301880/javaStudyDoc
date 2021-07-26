@@ -1,3 +1,12 @@
+# 资料
+
+| name                       | url                                                          |
+| -------------------------- | ------------------------------------------------------------ |
+| w3school-Java 开发环境配置 | [link](https://www.w3cschool.cn/java/java-environment-setup.html) |
+|                            |                                                              |
+
+
+
 # linux安装jdk
 
 ## centos安装jdk
