@@ -83,8 +83,6 @@ yum remove java-*
 
 # Ubuntu安装jdk
 
-## 使用命令安装
-
 ```shell
 sudo apt install openjdk-8-jdk
 ```
@@ -95,7 +93,7 @@ sudo apt install openjdk-8-jdk
 java -version 
 ```
 
-## 手动安装
+# linux手动安装
 
 ### 手动安装(建议)
 
@@ -129,15 +127,11 @@ sudo vim /etc/profile
 
 - 重新加载`/etc/profile`配置文件
 
-
-
 ```
 sudo source /etc/profile
 ```
 
 - 查看java版本
-
-
 
 ```
 java -version
