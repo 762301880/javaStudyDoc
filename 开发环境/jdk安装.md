@@ -3,9 +3,11 @@
 | name                       | url                                                          |
 | -------------------------- | ------------------------------------------------------------ |
 | w3school-Java 开发环境配置 | [link](https://www.w3cschool.cn/java/java-environment-setup.html) |
-|                            |                                                              |
+| linux手动安装-第三方博客   | [link](https://www.zhihu.com/tardis/sogou/art/35064156)      |
 
 # linux-[jdk手动安装](https://www.cnblogs.com/samcn/archive/2011/03/16/1986248.html)
+
+**查询java是否安装**
 
 ## [下载openjdk](https://jdk.java.net/)
 
