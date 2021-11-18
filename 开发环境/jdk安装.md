@@ -5,9 +5,9 @@
 | w3school-Java 开发环境配置 | [link](https://www.w3cschool.cn/java/java-environment-setup.html) |
 |                            |                                                              |
 
-# [jdk手动安装](https://www.cnblogs.com/samcn/archive/2011/03/16/1986248.html)
+# linux-[jdk手动安装](https://www.cnblogs.com/samcn/archive/2011/03/16/1986248.html)
 
-### [下载openjdk](https://jdk.java.net/)
+## [下载openjdk](https://jdk.java.net/)
 
 点击进入[oracle](https://developer.oracle.com/java/)官网,选择导航栏的Downloads,再选择**[OpenJDK](https://jdk.java.net/)**
 
@@ -24,7 +24,7 @@ wget https://download.java.net/openjdk/jdk8u41/ri/openjdk-8u41-b04-linux-x64-14_
 tar -zxvf openjdk-8u41-b04-linux-x64-14_jan_2020.tar.gz -C /usr/local/
 ```
 
-**修改配置环境**
+## 配置环境变量
 
 > **变量详解**
 >
@@ -77,7 +77,7 @@ OpenJDK 64-Bit Server VM (build 25.40-b25, mixed mode)
 
 
 
-# linux安装jdk
+# linux命令安装jdk
 
 ## centos安装jdk
 
@@ -104,6 +104,22 @@ java -version
 ```shell
 yum remove java-*
 ```
+
+## Ubuntu安装jdk
+
+```shell
+sudo apt install openjdk-8-jdk
+```
+
+- 安装完成之后查看是否安装成功
+
+```shell
+java -version 
+```
+
+
+
+
 
 # windows安装jdk
 
@@ -150,18 +166,4 @@ yum remove java-*
 打开**cmd** 输入命令`java -version`检测安装是否配置成功
 
 <img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120534391-1284611657.png' width='600px' heigth='400px' title='示例'  >
-
-# Ubuntu安装jdk
-
-```shell
-sudo apt install openjdk-8-jdk
-```
-
-- 安装完成之后查看是否安装成功
-
-```shell
-java -version 
-```
-
-
 
