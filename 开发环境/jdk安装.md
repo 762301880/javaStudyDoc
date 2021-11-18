@@ -5,6 +5,76 @@
 | w3school-Java 开发环境配置 | [link](https://www.w3cschool.cn/java/java-environment-setup.html) |
 |                            |                                                              |
 
+# [jdk手动安装](https://www.cnblogs.com/samcn/archive/2011/03/16/1986248.html)
+
+### [下载openjdk](https://jdk.java.net/)
+
+点击进入[oracle](https://developer.oracle.com/java/)官网,选择导航栏的Downloads,再选择**[OpenJDK](https://jdk.java.net/)**
+
+```shell
+#点击数字8
+Reference implementations: Java SE 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, & 7     
+```
+
+<img src="https://i.loli.net/2021/11/18/bDoCT5pi6AhUQRm.png" alt="1637196245(1).jpg" style="zoom:50%;" />
+
+```shell
+wget https://download.java.net/openjdk/jdk8u41/ri/openjdk-8u41-b04-linux-x64-14_jan_2020.tar.gz
+# 位置看个人习惯
+tar -zxvf openjdk-8u41-b04-linux-x64-14_jan_2020.tar.gz -C /usr/local/
+```
+
+**修改配置环境**
+
+> **变量详解**
+>
+> JAVA_HOME：指明JDK安装路径，此路径下包括lib，bin，jre等文件夹（tomcat等服务运行都需要依赖此变量)
+>
+> CLASSPATH：为java加载类(class or lib)路径，只有类在classpath中，java命令才能识别。
+>
+> PATH使得系统可以在任何路径下识别java命令，设为：JAVA HOME/bin:PATH
+>
+> **其他详解**
+>
+> linux下用冒号“:”来分隔路径
+>
+> $PATH / $CLASSPATH / $JAVA_HOME 是用来引用原来的环境变量的值
+> 在设置环境变量时特别要注意不能把原来的值给覆盖掉了，这是一种
+> 常见的错误。
+>
+> CLASSPATH中当前目录“.”不能丢,把当前目录丢掉也是常见的错误。
+> export是把这三个变量导出为全局变量。
+>
+> 大小写必须严格区分。
+
+```shell
+# 打开文件
+ vim /etc/profile
+# 设置环境变量-以下全部需要添加到/etc/profile文件夹内
+ JAVA_HOME=/usr/local/jdk解压的文件夹
+ PATH=$JAVA_HOME/bin:$PATH
+ CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib.tools.jar
+ export JAVA_HOME CLASSPATH PATH
+```
+
+**重新加载`/etc/profile`配置文件**
+
+> 环境变量修改后执行source命令，使得配置生效
+
+```shell
+source /etc/profile
+```
+
+**查看java版本**
+
+```shell
+[root@101fe8e80378 ~]# java -version
+openjdk version "1.8.0_41"
+OpenJDK Runtime Environment (build 1.8.0_41-b04)
+OpenJDK 64-Bit Server VM (build 25.40-b25, mixed mode)
+
+```
+
 
 
 # linux安装jdk
@@ -91,50 +161,6 @@ sudo apt install openjdk-8-jdk
 
 ```shell
 java -version 
-```
-
-# linux手动安装
-
-### 手动安装(建议)
-
-> 将Linux版的jdk的安装包配置到环境变量即可,很简单方便
-> oracle现在开始收费了,下载jdk8 的时候需要登录,最好下载一个jdk保存着,否则忘记账号很麻烦
-
-- 获取安装包
-  - 方法1:从网上找一个jdk8的tar.gz包,上传到Ubuntu
-  - 方法2:或者从网上找到下载jdk8的Linux版本的链接,使用 `wget 下载链接`,将jdk下载到当前目录
-- 解压安装包到指定位置
-
-
-
-```
-tar –xvf jdk-xxx.tar.gz –C /usr/local # 位置看个人习惯
-```
-
-- 修改配置环境
-
-
-
-```
-# 打开文件
-sudo vim /etc/profile
-# 设置环境变量
- JAVA_HOME=/usr/local/jdk解压的文件夹
- CLASSPATH=.:$JAVA_HOME/lib.tools.jar
- PATH=$JAVA_HOME/bin:$PATH
- export JAVA_HOME CLASSPATH PATH
-```
-
-- 重新加载`/etc/profile`配置文件
-
-```
-sudo source /etc/profile
-```
-
-- 查看java版本
-
-```
-java -version
 ```
 
 
