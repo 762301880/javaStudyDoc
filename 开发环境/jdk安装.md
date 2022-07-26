@@ -178,6 +178,12 @@ java -version
 
 <img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120534391-1284611657.png' width='600px' heigth='400px' title='示例'  >
 
+```shell
+javac  #查看内置命令
+```
+
+
+
 # 扩展知识点
 
 ##  java三剑客:JDK,JRE,JVM
