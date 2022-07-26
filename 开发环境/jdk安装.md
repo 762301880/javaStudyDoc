@@ -121,8 +121,6 @@ java -version
 
 
 
-
-
 # windows安装jdk
 
 **jdk下载**[地址](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
@@ -168,4 +166,17 @@ java -version
 打开**cmd** 输入命令`java -version`检测安装是否配置成功
 
 <img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120534391-1284611657.png' width='600px' heigth='400px' title='示例'  >
+
+# 扩展知识点
+
+##  java三剑客:JDK,JRE,JVM
+
+```java
+// JDK  java Development Kit
+java开发工具包
+// JRE java Runtime Rnvironment
+ java 运行环境
+// JVM java vitual Machine
+ java虚拟机   
+```
 
