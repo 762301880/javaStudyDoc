@@ -127,6 +127,12 @@ java -version
 
 ## 环境变量配置
 
+> 如果你告诉快递员,我的位置在北京请你准时送到,你猜会怎样(北京这么大北京那个位置一脸懵)?
+>
+> 同理，当计算机执行某一个命令,但是盲目硬盘之大,计算机不知道去哪里找到这里命令,所以
+>
+> 需要我们给计算机做一些配置，目的就是让他hi到去哪找,通俗的讲,这个就叫<font color='red'>环境变量</font>
+
 ### 右击我的电脑–>属性–>高级系统设置–>环境变量：
 
 <img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517114144402-822635624.png' width='600px' heigth='400px' title='示例'>
@@ -153,9 +159,14 @@ java -version
 >
 > 1. % 表示引用的意思 **%JAVA_HOME%\bin** 意思是引用jdk下面的bin(主)目录
 > 2. % 表示引用的意思 **%JAVA_HOME%\jre\bin** 意思是引用jre下面的bin(主)目录
+>
+> <font color='red'>注意:</font>
+>
+> 两行变量一定要分开
 
 ```
-%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;
+%JAVA_HOME%\bin
+%JAVA_HOME%\jre\bin
 ```
 <img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120107121-471997434.png' width='600px' heigth='400px' title='示例'>
 
