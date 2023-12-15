@@ -119,6 +119,14 @@ sudo apt install openjdk-8-jdk
 java -version 
 ```
 
+##  一键安装jdk(自己写的脚本)
+
+```shell
+# 拉取脚本 修改名称  并修改可执行后执行脚本
+
+wget https://gitee.com/yaolliuyang/linux_shell/raw/master/installJdk1.8.sh -O installJdk1.8.sh && chmod a+x installJdk1.8.sh && source installJdk1.8.sh
+```
+
 
 
 # windows安装jdk
