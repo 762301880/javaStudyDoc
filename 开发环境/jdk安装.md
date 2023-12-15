@@ -18,7 +18,7 @@
 Reference implementations: Java SE 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, & 7     
 ```
 
-<img src="https://i.loli.net/2021/11/18/bDoCT5pi6AhUQRm.png" alt="1637196245(1).jpg" style="zoom:50%;" />
+<img src="https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/bDoCT5pi6AhUQRm.png" alt="1637196245(1).jpg" style="zoom:50%;" />
 
 ```shell
 wget https://download.java.net/openjdk/jdk8u41/ri/openjdk-8u41-b04-linux-x64-14_jan_2020.tar.gz
