@@ -18,7 +18,7 @@
 Reference implementations: Java SE 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, & 7     
 ```
 
-<img src="https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/bDoCT5pi6AhUQRm.png" alt="1637196245(1).jpg" style="zoom:50%;" />
+<img src="https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/bDoCT5pi6AhUQRm.png" alt="1637196245(1).jpg" style="zoom:50%;" />
 
 ```shell
 wget https://download.java.net/openjdk/jdk8u41/ri/openjdk-8u41-b04-linux-x64-14_jan_2020.tar.gz
@@ -143,11 +143,11 @@ wget https://gitee.com/yaolliuyang/linux_shell/raw/master/installJdk1.8.sh -O in
 
 ### 右击我的电脑–>属性–>高级系统设置–>环境变量：
 
-<img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517114144402-822635624.png' width='600px' heigth='400px' title='示例'>
+<img src='https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/1922055-20200517114144402-822635624.png' width='600px' heigth='400px' title='示例'>
 
 ### 设置JAVA_HOME环境变量（java的家：变量指向自己安装jdk的根目录）
 
-<img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517115757039-540431936.png' width='600px' heigth='400px' title='示例'>
+<img src='https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/1922055-20200517115757039-540431936.png' width='600px' heigth='400px' title='示例'>
 
 ### ClassPath环境变量
 
@@ -157,7 +157,7 @@ wget https://gitee.com/yaolliuyang/linux_shell/raw/master/installJdk1.8.sh -O in
 .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar 
 ```
 
-<img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517115028001-1282145423.png' width='600px' heigth='400px' title='示例'>
+<img src='https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/1922055-20200517115028001-1282145423.png' width='600px' heigth='400px' title='示例'>
 
 ### 找到系统的path变量（如果没有请自己建立一个path变量）：
 
@@ -176,15 +176,15 @@ wget https://gitee.com/yaolliuyang/linux_shell/raw/master/installJdk1.8.sh -O in
 %JAVA_HOME%\bin
 %JAVA_HOME%\jre\bin
 ```
-<img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120107121-471997434.png' width='600px' heigth='400px' title='示例'>
+<img src='https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/1922055-20200517120107121-471997434.png' width='600px' heigth='400px' title='示例'>
 
-<img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120330160-1457725008.png' width='600px' heigth='400px' title='示例'>								
+<img src='https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/1922055-20200517120330160-1457725008.png' width='600px' heigth='400px' title='示例'>								
 
 ### 检测是否安装成功
 
 打开**cmd** 输入命令`java -version`检测安装是否配置成功
 
-<img src='https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/1922055-20200517120534391-1284611657.png' width='600px' heigth='400px' title='示例'  >
+<img src='https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/1922055-20200517120534391-1284611657.png' width='600px' heigth='400px' title='示例'  >
 
 ```shell
 javac  #查看内置命令

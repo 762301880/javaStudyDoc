@@ -26,7 +26,7 @@
 
 - 请在[官网](https://maven.apache.org/download.cgi)下载
 
-![img](https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/750D721E-0624-4C16-AD4B-9EA5D7F6289A.png)
+![img](https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/750D721E-0624-4C16-AD4B-9EA5D7F6289A.png)
 
 - 下载完成之后解压
 
@@ -47,11 +47,11 @@
 
 
 
-![image-20210719175048756](https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/image-20210719175048756.png)
+![image-20210719175048756](https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/image-20210719175048756.png)
 
 - 编辑系统变量 **Path**，添加变量值：;%MAVEN_HOME%\bin
 
-![image-20210719175253487](https://yaoliuyang-blog-images.oss-cn-beijing.aliyuncs.com/blogImages/image-20210719175253487.png)
+![image-20210719175253487](https://gitee.com/yaolliuyang/blogImages/raw/master/blogImages/image-20210719175253487.png)
 
 
 
