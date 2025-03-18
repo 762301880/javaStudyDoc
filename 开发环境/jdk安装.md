@@ -133,6 +133,8 @@ wget https://gitee.com/yaolliuyang/linux_shell/raw/master/installJdk1.8.sh -O in
 
 **jdk下载**[地址](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
 
+[jdk8下载](https://www.oracle.com/cn/java/technologies/javase/javase8-archive-downloads.html)
+
 ## 环境变量配置
 
 > 如果你告诉快递员,我的位置在北京请你准时送到,你猜会怎样(北京这么大北京那个位置一脸懵)?
